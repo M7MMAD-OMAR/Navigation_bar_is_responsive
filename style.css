@@ -24,10 +24,10 @@ body {
     background-color: var(--bg-color-body)
 }
 .hidden {
-    visibility: hidden;
-}
+    display: none !important;
+  }
 
-/* Header Start */
+/* Header Desktop Start */
 .container {
     width: 100%;
     display: flex;
@@ -93,4 +93,84 @@ body {
     -o-transition: all 0.5s;
 }
 
-/* Header End */
+/* Header Desktop End */
+
+
+
+/* toggle Start */
+
+#toggle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: var(--bg-color-first);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+#toggle::before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background-color: var(--bg-color-second);
+    box-shadow: 0 10px 0 var(--bg-color-second);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+
+#toggle::after {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background-color: var(--bg-color-second);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+}
+
+#toggle.active {
+    background: #f7226a;
+}
+
+#toggle.active::before {
+    transform: translateY(0px) rotate(45deg);
+    -webkit-transform: translateY(0px) rotate(45deg);
+    -moz-transform: translateY(0px) rotate(45deg);
+    -ms-transform: translateY(0px) rotate(45deg);
+    -o-transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 0 var(--bg-color-second);
+}
+
+#toggle.active::after {
+    transform: translateY(0px) rotate(-45deg);
+    -webkit-transform: translateY(0px) rotate(-45deg);
+    -moz-transform: translateY(0px) rotate(-45deg);
+    -ms-transform: translateY(0px) rotate(-45deg);
+    -o-transform: translateY(0px) rotate(-45deg);
+}
+
+/* toggle End */
