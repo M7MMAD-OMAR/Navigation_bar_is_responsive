@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    /* Arabic */
+    /* font-family: 'Tajawal', sans-serif; */
+
+    /* English */
+    font-family: 'Barlow', sans-serif; 
+}
+
+:root {
+    --bg-color-body: #f2f2fc;
+    --bg-color-first: #37b182;
+    --bg-color-second: #e8dfec;
+}
+
+body { 
+    background-color: var(--bg-color-body)
+}
+.hidden {
+    visibility: hidden;
+}
+
+/* Header Start */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color-first);
+}
+
+.logo {
+    font-size: xx-large;
+    font-weight: bolder;
+    margin: 20px 0px 20px 40px;
+    cursor: pointer;
+
+}
+
+.navbar-item ul {
+    margin-right: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-item ul li a{
+    /* border: 1px solid; */
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid var(--bg-color-first);
+    border-radius: 10px;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+
+.navbar-item ul li a:hover {
+    background-color: var(--bg-color-second);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.navbar-item ul li a.active {
+    background-color: var(--bg-color-second);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+/* Header End */
