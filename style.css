@@ -157,12 +157,12 @@ body {
 }
 
 #toggle.active::before {
+    box-shadow: 0 0 0 var(--bg-color-second);
     transform: translateY(0px) rotate(45deg);
     -webkit-transform: translateY(0px) rotate(45deg);
     -moz-transform: translateY(0px) rotate(45deg);
     -ms-transform: translateY(0px) rotate(45deg);
     -o-transform: translateY(0px) rotate(45deg);
-    box-shadow: 0 0 0 var(--bg-color-second);
 }
 
 #toggle.active::after {
