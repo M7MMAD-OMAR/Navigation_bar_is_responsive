@@ -5,30 +5,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Navication bar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ont Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    
-
-
     <header>
         <div class="container">
             <div class="logo">
                 <p>M7MMAD-OMAR</p>
             </div>
             <div id="toggle hidden"></div>
+
             <div class="navbar-item">
                 <ul>
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#support">Support</a></li>
-                    <li><a href="#dropdown">Dropdown</a></li>
+                    <li>
+                        <a href="#home" class="active"><i class="fa-solid fa-house"></i>Home</a>
+                    </li>
+                    <li>
+                        <a href="#about"><i class="fa-solid fa-address-card"></i>About</a>
+                    </li>
+                    <li>
+                        <a href="#support"><i class="fa-solid fa-headset"></i>Support</a>
+                    </li>
+                    <li>
+                        <a href="#dropdown">Dropdown<i class="fa-solid fa-caret-down"></i></a>
+                        <!-- Sub Menu Start -->
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#first">First</a></li>
+                                <li><a href="#second">Second</a></li>
+                                <li><a href="#third">Third</a></li>
+                                <li><a href="#forth">Forth</a></li>
+                            </ul>
+                        </div>
+                        <!-- Sub Menu End -->
+                    </li>
                 </ul>
             </div>
-
         </div>
     </header>
 
