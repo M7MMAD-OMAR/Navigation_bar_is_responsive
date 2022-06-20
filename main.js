@@ -4,6 +4,10 @@ const dropdown = document.querySelector('a[href="#dropdown"]');
 const dropdown_icon = document.querySelector('.fa-caret-down');
 const sub_menu = document.querySelector('.sub-menu');
 const sub_menu_items = document.querySelectorAll('.sub-menu ul li a');
+const navbar_item = document.querySelector('.navbar-item');
+
+
+
 
 active_item.forEach((ele) => {
     ele.onclick = function() {
@@ -18,6 +22,7 @@ active_item.forEach((ele) => {
             }else {
                 dropdown_icon.classList.add('active');
                 sub_menu.style.display = 'block';
+
             }
         } else {
             dropdown_icon.classList.remove('active');
@@ -39,6 +44,14 @@ sub_menu_items.forEach((ele) => {
 });
 
 
-// toggle.addEventListener("click", () => {
-//     toggle.classList.toggle('active');
-// });
+toggle.addEventListener("click", () => {
+    if(toggle.classList.contains('active')){
+        toggle.classList.remove('active');
+        navbar_item.style.display = 'none';
+        dropdown_icon.classList.remove('active');
+        sub_menu.style.display = 'none';
+    }else {
+        toggle.classList.toggle('active');
+        navbar_item.style.display = 'block';
+    }
+});
