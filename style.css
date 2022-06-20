@@ -126,9 +126,9 @@ body {
     margin-bottom: 0;
 }
 
-.navbar-item ul li:hover .sub-menu {
+/* .navbar-item ul li:hover .sub-menu {
     display: block;
-}
+} */
 
 .fa-solid {
     margin-right: 5px;
@@ -138,11 +138,7 @@ body {
 .fa-caret-down {
     margin-right: 0;
     margin-left: 5px;
-    transition: all 0.3;
-    -webkit-transition: all 0.3;
-    -moz-transition: all 0.3;
-    -ms-transition: all 0.3;
-    -o-transition: all 0.3;
+
 }
 
 .fa-caret-down.active {
@@ -151,6 +147,7 @@ body {
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
+
 }
 /* Header End */
 
