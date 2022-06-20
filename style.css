@@ -31,7 +31,7 @@ body {
 .container {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: var(--bg-color-first);
 }
@@ -45,7 +45,7 @@ body {
 }
 
 .navbar-item ul {
-    margin-right: 70px;
+    /* margin-right: 70px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,12 +157,12 @@ body {
 }
 
 #toggle.active::before {
+    box-shadow: 0 0 0 var(--bg-color-second);
     transform: translateY(0px) rotate(45deg);
     -webkit-transform: translateY(0px) rotate(45deg);
     -moz-transform: translateY(0px) rotate(45deg);
     -ms-transform: translateY(0px) rotate(45deg);
     -o-transform: translateY(0px) rotate(45deg);
-    box-shadow: 0 0 0 var(--bg-color-second);
 }
 
 #toggle.active::after {
@@ -174,3 +174,12 @@ body {
 }
 
 /* toggle End */
+
+
+/* Media Start */
+
+
+
+
+
+/* Media End */
