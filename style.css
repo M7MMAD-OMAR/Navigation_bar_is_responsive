@@ -207,9 +207,6 @@ body {
     -o-transform: translateY(10px);
 }
 
-/* #toggle.active {
-    background: #f7226a;
-} */
 
 #toggle.active::before {
     background-color: #f7226a;
@@ -261,12 +258,6 @@ body {
     .logo {
         font-size: x-large;
         margin-left: 30px;
-    }
-    .container-toggle {
-        display: block !important;
-    }
-    .container-toggle {
-        z-index: 2;
     }
 
     .navbar-item {
